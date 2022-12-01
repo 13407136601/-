@@ -17,6 +17,30 @@
                 <h4 class="pois_name ellipsis">{{item.name}}</h4>
                 <p class="pois_address ellipsis">{{item.address}}</p>
             </li>  
+        </ul><header v-if="historytitle" class="pois_search_history">搜索历史</header>
+        <ul class="getpois_ul">
+            <li v-for="(item, index) in placelist" @click='nextpage(index, item.geohash)' :key="index">
+                <h4 class="pois_name ellipsis">{{item.name}}</h4>
+                <p class="pois_address ellipsis">{{item.address}}</p>
+            </li>  
+        </ul><header v-if="historytitle" class="pois_search_history">搜索历史</header>
+        <ul class="getpois_ul">
+            <li v-for="(item, index) in placelist" @click='nextpage(index, item.geohash)' :key="index">
+                <h4 class="pois_name ellipsis">{{item.name}}</h4>
+                <p class="pois_address ellipsis">{{item.address}}</p>
+            </li>  
+        </ul><header v-if="historytitle" class="pois_search_history">搜索历史</header>
+        <ul class="getpois_ul">
+            <li v-for="(item, index) in placelist" @click='nextpage(index, item.geohash)' :key="index">
+                <h4 class="pois_name ellipsis">{{item.name}}</h4>
+                <p class="pois_address ellipsis">{{item.address}}</p>
+            </li>  
+        </ul><header v-if="historytitle" class="pois_search_history">搜索历史</header>
+        <ul class="getpois_ul">
+            <li v-for="(item, index) in placelist" @click='nextpage(index, item.geohash)' :key="index">
+                <h4 class="pois_name ellipsis">{{item.name}}</h4>
+                <p class="pois_address ellipsis">{{item.address}}</p>
+            </li>  
         </ul>
         <div class="search_none_place" v-if="placeNone">很抱歉！无搜索结果</div>
     </div>
